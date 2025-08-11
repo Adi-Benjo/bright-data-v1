@@ -277,7 +277,7 @@
         /* Interactive Workflow Visualization */
         .workflow-visual {
             position: relative;
-            height: 560px;
+            height: 620px;
         }
 
         .workflow-container {
@@ -849,7 +849,7 @@
             }
             
             .workflow-visual {
-                height: 480px;
+                height: 540px;
             }
             
             .workflow-container {
@@ -905,13 +905,12 @@
                 justify-content: center;
                 background: transparent;
                 border: none;
-                padding: 8px;
+                padding: 10px;
                 cursor: pointer;
                 width: 44px;
                 height: 44px;
                 position: relative;
                 border-radius: 6px;
-                gap: 4px;
                 flex-shrink: 0;
                 margin: 0;
             }
@@ -931,32 +930,42 @@
                 background: var(--bd-white);
                 transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 border-radius: 2px;
-                transform-origin: center;
+            }
+            
+            .mobile-menu-btn .hamburger-line {
+                transform-origin: center center;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
             }
             
             .mobile-menu-btn .hamburger-line:nth-child(1) {
-                transform: translateY(0);
+                top: 12px;
             }
             
             .mobile-menu-btn .hamburger-line:nth-child(2) {
-                transform: translateY(0);
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
             }
             
             .mobile-menu-btn .hamburger-line:nth-child(3) {
-                transform: translateY(0);
+                bottom: 12px;
             }
             
             .mobile-menu-btn.active .hamburger-line:nth-child(1) {
-                transform: rotate(45deg) translate(6px, 6px);
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%) rotate(45deg);
             }
             
             .mobile-menu-btn.active .hamburger-line:nth-child(2) {
                 opacity: 0;
-                transform: scale(0);
+                transform: translateX(-50%) translateY(-50%) scaleX(0);
             }
             
             .mobile-menu-btn.active .hamburger-line:nth-child(3) {
-                transform: rotate(-45deg) translate(6px, -6px);
+                bottom: auto;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%) rotate(-45deg);
             }
             
             .mobile-menu {
@@ -1079,7 +1088,7 @@
             }
 
             .workflow-visual {
-                height: 600px;
+                height: 650px;
                 order: 2;
                 margin-top: 20px;
             }
@@ -1359,7 +1368,7 @@
             }
             
             .workflow-visual {
-                height: 500px;
+                height: 580px;
                 margin: 16px 0;
                 order: 2;
             }
